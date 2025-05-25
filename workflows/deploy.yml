@@ -38,7 +38,7 @@ jobs:
             -d "{\"solutionId\": \"$AGENT_ID\"}")
           echo "Sent payload: {\"solutionId\":\"$AGENT_ID\"}"
           echo "Inventory check response: $RESPONSE"
-          echo "flow URL used: $FLOW_URL"
+          echo "flow URL used: [REDACTED]"
           EXISTS=$(echo $RESPONSE | jq -r '.exists')
           echo "EXISTS=$EXISTS" >> $GITHUB_ENV
 
